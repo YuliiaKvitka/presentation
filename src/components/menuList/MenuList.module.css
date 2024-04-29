@@ -1,0 +1,50 @@
+.menuList {
+    width: 559px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.menuItem {
+ /* background-color:var(--brand-color-menu) ; */
+   background-image: linear-gradient(to right,
+        var(--brand-color-btn),
+        var(--brand-color-btn) 50%,
+        var(--brand-color-menu) 50%); 
+    background-size: 200% 100%;
+    background-position: -100%;
+    padding: 4px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-family: Poppins, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.menuItem::before {
+  content: '';
+  background: var(--brand-color-btn);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all .3s ease;
+}
+
+.menuItem:hover {
+  background-position: 0;
+  font-weight: 600;
+
+}
+
+.menuItem:hover::before {
+  width: 100%;
+}

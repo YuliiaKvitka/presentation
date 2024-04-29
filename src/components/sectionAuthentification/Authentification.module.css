@@ -1,0 +1,44 @@
+
+.section {
+    width: 1440px;
+    height: 100%;
+    /* height: 860px; */
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+    margin-top: 250px;
+    height: 100%;
+    width: 1350px;
+}
+
+.title {
+    margin-bottom: 98px;
+}
+.heading2 {
+    color: var( --brand-heading2);
+    font-family: Rubik, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.content {
+    display: flex;
+    gap: 24px;
+}
+.slide {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.heading5 {
+    color: var(--brand-heading2);
+    font-family: Rubik, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+}
